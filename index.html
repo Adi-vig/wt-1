@@ -86,21 +86,41 @@
 
             <div class="tab-pane fade" id="examples" role="tabpanel">
                 <div class="card p-4">
-                  <h4>Example EDAI Projects</h4>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>Smart Dustbin</strong> Uses ultrasonic sensor and servo motor to open lid when someone approaches. (Core + Social Impact)</li>
-                    <li class="list-group-item"><strong>Gesture-Controlled Robot</strong> Controlling a robot wirelessly using hand gestures and accelerometer. (Core + Interdisciplinary)</li>
-                    <li class="list-group-item"><strong>Smart Receptionist System</strong> Face recognition with ESP32, IoT-based door control, and web dashboard. (Interdisciplinary + Industry-Oriented)</li>
-                    <li class="list-group-item"><strong>PDF Knowledge Extractor using LLM + RAG</strong> A full-stack web app to intelligently answer questions from large PDFs. (Core + Research)</li>
-                    <li class="list-group-item"><strong>Drone vs Bird Classification using Micro-Doppler Radar</strong> ML-based classification using radar signatures. (Research + Industry)</li>
-                    <li class="list-group-item"><strong>Automatic Change Detection in Satellite Images</strong> Detecting urban development using SAR data and Google Earth Engine. (Research + Social Impact)</li>
-                    <li class="list-group-item"><strong>Smart Parking System</strong> ESP32 + sensors + web dashboard for booking and live monitoring. (Industry + IoT)</li>
-                    <li class="list-group-item"><strong>Maze-solving Robot using SLAM</strong> ROS2-based robot with DFS navigation and live mapping. (Core + Research)</li>
-                    <li class="list-group-item"><strong>Compiler Front-End</strong> Lex/Yacc-based mini C compiler with TAC generation. (Core Course Project)</li>
-                    <li class="list-group-item"><strong>Health Monitoring Wearable</strong> Tracks vitals and sends data to a web interface. (Interdisciplinary + Social Impact)</li>
-                  </ul>
+                    <h4>Example EDAI Projects</h4>
+
+                    <!-- Category Selector -->
+                    <div class="mb-3">
+                    <button class="btn btn-outline-primary me-2" onclick="loadProjects('course')">Course Projects</button>
+                    <button class="btn btn-outline-secondary" onclick="loadProjects('edi')">EDI Projects</button>
+                    </div>
+
+                    <!-- Project List -->
+                    <ul class="list-group list-group-flush mb-4" id="projectList">
+                    <!-- Projects will be inserted here -->
+                    </ul>
+
+                    <!-- Optional: Add Project Form -->
+                    <div>
+                    <h5>Add New Project</h5>
+                    <form id="projectForm" onsubmit="addProject(event)">
+                        <div class="mb-2">
+                        <input type="text" id="projectTitle" class="form-control" placeholder="Project Title" required>
+                        </div>
+                        <div class="mb-2">
+                        <input type="text" id="projectDesc" class="form-control" placeholder="Project Description" required>
+                        </div>
+                        <div class="mb-2">
+                        <select id="projectType" class="form-select" required>
+                            <option value="course">Course Project</option>
+                            <option value="edi">EDI Project</option>
+                        </select>
+                        </div>
+                        <button type="submit" class="btn btn-success">Add Project</button>
+                    </form>
+                    </div>
                 </div>
-              </div>
+            </div>
+
               
         </div>  
 
