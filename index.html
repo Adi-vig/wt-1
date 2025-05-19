@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EDAI/DT Projects Relevance with VIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Relevance of EDAI/DT Projects in VIT</h2>
+
+        <!-- Tabs -->
+        <ul class="nav nav-pills justify-content-center mb-4" id="edaiTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="core-tab" data-bs-toggle="pill" href="#core" role="tab">Core
+                    Course-Based</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="interdisciplinary-tab" data-bs-toggle="pill" href="#interdisciplinary"
+                    role="tab">Interdisciplinary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="industry-tab" data-bs-toggle="pill" href="#industry"
+                    role="tab">Industry-Oriented</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="social-tab" data-bs-toggle="pill" href="#social" role="tab">Social Impact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="competition-tab" data-bs-toggle="pill" href="#competition" role="tab">Hackathons
+                    & Competitions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="examples-tab" data-bs-toggle="pill" href="#examples" role="tab">Example Projects</a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="edaiTabsContent">
+            <div class="tab-pane fade show active" id="core" role="tabpanel">
+                <div class="card p-3">
+                    <h4>Core Course-Based Projects</h4>
+                    <p>These EDAI projects are aligned with your core subjects, like embedded systems, control theory,
+                        software engineering, etc. They help you apply theoretical concepts to real-world applications
+                        and are often evaluated by professors, making them crucial for academic performance and internal
+                        assessment.</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="interdisciplinary" role="tabpanel">
+                <div class="card p-3">
+                    <h4>Interdisciplinary Projects</h4>
+                    <p>These projects combine concepts from multiple branches like mechanical, electrical, computer
+                        science, and design. They teach collaborative development, broaden technical exposure, and are
+                        highly valuable in research and higher studies.</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="industry" role="tabpanel">
+                <div class="card p-3">
+                    <h4>Industry-Oriented Projects</h4>
+                    <p>EDAI projects mentored or inspired by industry problems enhance employability. They often involve
+                        real constraints, documentation, and client interaction—giving you a pre-internship like
+                        experience within college itself.</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="social" role="tabpanel">
+                <div class="card p-3">
+                    <h4>Social Impact Projects</h4>
+                    <p>These projects target community problems like waste management, assistive tech, or rural
+                        automation. They demonstrate social responsibility, boost CVs for social fellowships, and often
+                        receive funding and recognition.</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="competition" role="tabpanel">
+                <div class="card p-3">
+                    <h4>Hackathons & Competitions</h4>
+                    <p>Many EDAI teams participate in inter-college or national innovation challenges. These not only
+                        build credibility but also bring networking opportunities, internship offers, and occasionally,
+                        startup ideas!</p>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="examples" role="tabpanel">
+                <div class="card p-4">
+                  <h4>Example EDAI Projects</h4>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Smart Dustbin</strong> Uses ultrasonic sensor and servo motor to open lid when someone approaches. (Core + Social Impact)</li>
+                    <li class="list-group-item"><strong>Gesture-Controlled Robot</strong> Controlling a robot wirelessly using hand gestures and accelerometer. (Core + Interdisciplinary)</li>
+                    <li class="list-group-item"><strong>Smart Receptionist System</strong> Face recognition with ESP32, IoT-based door control, and web dashboard. (Interdisciplinary + Industry-Oriented)</li>
+                    <li class="list-group-item"><strong>PDF Knowledge Extractor using LLM + RAG</strong> A full-stack web app to intelligently answer questions from large PDFs. (Core + Research)</li>
+                    <li class="list-group-item"><strong>Drone vs Bird Classification using Micro-Doppler Radar</strong> ML-based classification using radar signatures. (Research + Industry)</li>
+                    <li class="list-group-item"><strong>Automatic Change Detection in Satellite Images</strong> Detecting urban development using SAR data and Google Earth Engine. (Research + Social Impact)</li>
+                    <li class="list-group-item"><strong>Smart Parking System</strong> ESP32 + sensors + web dashboard for booking and live monitoring. (Industry + IoT)</li>
+                    <li class="list-group-item"><strong>Maze-solving Robot using SLAM</strong> ROS2-based robot with DFS navigation and live mapping. (Core + Research)</li>
+                    <li class="list-group-item"><strong>Compiler Front-End</strong> Lex/Yacc-based mini C compiler with TAC generation. (Core Course Project)</li>
+                    <li class="list-group-item"><strong>Health Monitoring Wearable</strong> Tracks vitals and sends data to a web interface. (Interdisciplinary + Social Impact)</li>
+                  </ul>
+                </div>
+              </div>
+              
+        </div>  
+
+    
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="background-color: #2f2f42; color: #d6d6e7; border-top: 1px solid #444;">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1" style="color: #d6d6e7;">
+                <svg class="bi" width="30" height="24" fill="currentColor"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span>© Created by Aditya Sakhare - CSD-26</span>
+            </div>
+          </footer>
+          
+
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
